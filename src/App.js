@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 
 function App() {
@@ -13,8 +14,17 @@ function App() {
 
    <div className="App">
       
-      <h1> Hello World</h1>
-      <Link to="/portafolio"> <h5> Portafolio </h5> </Link>
+        <Switch>
+          <Route path="/curriculum">
+            <Header />
+          </Route>
+          <Route path="/portafolio">
+            <Header />
+          </Route>
+          <Route path="/">
+            <Header />
+          </Route>
+        </Switch>
 
     </div>
 
