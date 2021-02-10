@@ -7,11 +7,14 @@ function Header() {
   return (
 
     <div className="header">
+      <Link to="/">
+      <h1>home</h1>
+      </Link>
+      <Link to="/curriculum">
+      <h1>curriculum</h1>
+      </Link>
       <Link to="/portafolio">
-        <img
-          className="header_logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        />
+      <h1> portafolio </h1>
       </Link>
 
     </div>
